@@ -1,0 +1,99 @@
+/* Contact Page */
+.contact {
+  min-height: 100vh;
+  background: #0b0b0b;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  padding-bottom: 50px;
+}
+
+/* Hero Section */
+.contact-hero {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  margin: 0 20px 40px;
+  border-radius: 15px;
+}
+
+.contact-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.contact-hero p {
+  color: rgba(255,255,255,0.75);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.contact-form .form-group label {
+  margin-bottom: 5px;
+  display: block;
+  font-weight: 500;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  resize: none;
+}
+
+.contact-form .form-group input::placeholder,
+.contact-form .form-group textarea::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+.contact-form button {
+  padding: 12px;
+  border: 1px solid rgba(255,255,255,0.5);
+  background: transparent;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: rgba(255,255,255,0.15);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-hero {
+    height: 4 0vh;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+}

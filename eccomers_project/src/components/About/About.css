@@ -1,0 +1,81 @@
+/* About Page */
+.about {
+  min-height: 100vh;
+  background: #0b0b0b;
+  color: white;
+  font-family: "Arial", sans-serif;
+}
+
+/* Hero Section */
+.about-hero {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  margin: 0 20px 50px 20px; /* اعطينا top = 0 لتقليل الفراغ فوق */
+  border-radius: 15px;
+}
+
+.about-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.about-hero p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Mission Section */
+.about-mission {
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-mission h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.about-mission p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 40px;
+}
+
+/* Team Cards */
+.team-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.team-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.team-card h3 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.team-card p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+}
